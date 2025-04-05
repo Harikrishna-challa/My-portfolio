@@ -18,22 +18,22 @@ const Education = () => {
 
         <div className="education-card">
           <h4>Bachelor of Science (B.Sc.) – MPCs</h4>
-          <p><strong>Institution:</strong> University College of Science, Osmania University</p>
+          <p><strong>Institution:</strong> Sai Ram Degree College, Satavahana University</p>
           <p><strong>Graduation:</strong> 2022</p>
           <p><strong>Subjects:</strong> Mathematics, Physics, Computer Science</p>
         </div>
 
         <div className="education-card">
           <h4>Intermediate – MPC</h4>
-          <p><strong>Board:</strong> Board of Intermediate Education, Telangana</p>
+          <p><strong>Board:</strong> Masters junior College, Jammikunta</p>
           <p><strong>Year:</strong> 2019</p>
           <p><strong>Subjects:</strong> Mathematics, Physics, Chemistry</p>
         </div>
 
         <div className="education-card">
           <h4>SSC (10th Class)</h4>
-          <p><strong>Board:</strong> Board of Secondary Education, Telangana</p>
-          <p><strong>Year:</strong> 2017</p>
+          <p><strong>Board:</strong> ZPHS High School Vavilala, Vavilala</p>
+          <p><strong>Year:</strong> 2016</p>
         </div>
       </div>
       </div>

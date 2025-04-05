@@ -27,7 +27,7 @@ const Hero = () => {
           <Button
             variant="outline-info"
             className="hero-btn"
-            href="https://www.linkedin.com/in/challa-harikrishna"
+            href="https://www.linkedin.com/feed/"
             target="_blank"
           >
             LinkedIn
