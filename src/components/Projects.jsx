@@ -18,6 +18,13 @@ const projects = [
     demo: 'https://mern-auth-jet-kappa.vercel.app/login',
   },
   {
+    "title": "Personal Portfolio Website",
+    "description": "A responsive portfolio showcasing my skills, projects, and experiences.",
+    "tech": "React.js, Vite, Bootstrap, AOS, GitHub Pages",
+    "github": "https://github.com/Harikrishna-challa/My-portfolio",
+    "demo": "https://harikrishna-challa.github.io/My-portfolio/"
+  },
+  {
     title: 'Currency Converter',
     description: 'A web app that converts currency values using a real-time exchange API.',
     tech: 'JavaScript, HTML, CSS,Github',
