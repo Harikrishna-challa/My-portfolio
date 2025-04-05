@@ -1,0 +1,10 @@
+/* src/styles/global.css */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Example gradient */
+    font-family: Arial, sans-serif; /* Consistent font across the app */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  

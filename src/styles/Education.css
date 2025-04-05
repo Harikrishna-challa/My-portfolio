@@ -1,0 +1,42 @@
+/* src/styles/Education.css */
+.education-section {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    padding: 5rem 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #00e6e6;
+    text-shadow: 2px 2px 8px rgba(0, 255, 255, 0.4);
+  }
+  
+  .education-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .education-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  }
+  .full-screen {
+    height: calc(var(--vh, 1vh) * 100); /* Use the updated vh value */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,71 @@
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+
+/* Global flashy animated gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  /* Animated gradient background */
+
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #e0e0e0;
+  transition: background 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Keyframes for animated gradient */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Force container backgrounds to be transparent */
+.container {
+  background: transparent !important;
+}
+
+/* Custom hover effect for project cards */
+.project-card {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  background-color: #343a40 !important;
+  color: #ffffff;
+}
+/* Flashy hover effect for social/contact buttons */
+.social-link {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(135deg, #4D96FF, #6BCB77);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(77, 150, 255, 0.5);
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #FFD93D, #FF6B6B);
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+}
