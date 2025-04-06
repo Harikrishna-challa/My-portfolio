@@ -1,70 +1,92 @@
 /* src/styles/Hero.css */
 
 .hero-section {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-family: 'Poppins', sans-serif; /* NEW */
+}
+
+/* Hero image styling */
+.hero-image {
+  width: 350px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+  transition: transform 0.4s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.1);
+}
+
+/* Glitch animated name */
+.glitch-text {
+  color: #00fff0;
+  position: relative;
+  animation: glitch 3s infinite;
+  font-family: 'Pacifico', cursive; /* NEW */
+}
+
+/* Glitch animation keyframes */
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0 red;
   }
-  
-  /* Hero image styling */
-  .hero-image {
-    width: 350px;
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
-    transition: transform 0.4s ease;
+  20% {
+    text-shadow: -2px 0 blue;
   }
-  
-  .hero-image:hover {
-    transform: scale(1.1);
+  40% {
+    text-shadow: 2px 0 green;
   }
-  
-  /* Glitch animated name */
-  .glitch-text {
-    color: #00fff0;
-    position: relative;
-    animation: glitch 2s infinite;
+  60% {
+    text-shadow: -2px 0 yellow;
   }
-  
-  @keyframes glitch {
-    0% {
-      text-shadow: 2px 0 red;
-    }
-    20% {
-      text-shadow: -2px 0 blue;
-    }
-    40% {
-      text-shadow: 2px 0 green;
-    }
-    60% {
-      text-shadow: -2px 0 yellow;
-    }
-    80% {
-      text-shadow: 2px 0 cyan;
-    }
-    100% {
-      text-shadow: -2px 0 magenta;
-    }
+  80% {
+    text-shadow: 2px 0 cyan;
   }
-  
-  /* Button hover effect */
-  .hero-btn {
-    transition: all 0.3s ease;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-width: 2px;
+  100% {
+    text-shadow: -2px 0 magenta;
   }
-  
-  .hero-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #00fff0;
-  }
-  .full-screen {
-    height: calc(var(--vh, 1vh) * 100); /* Use the updated vh value */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }  
+}
+
+/* Button hover effect */
+.hero-btn {
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-width: 2px;
+  font-family: 'Poppins', sans-serif; /* NEW */
+}
+
+.hero-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00fff0;
+}
+
+.full-screen {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typing-effect {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.25rem;
+  color: #00e6e6;
+  margin-top: 20px;
+}
+
+
+.typing-effect .cursor {
+  color: #00e6e6;
+  font-weight: 600;
+}
+.interested-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}

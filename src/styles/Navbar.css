@@ -34,4 +34,11 @@
     color: #00ffe7;
     transform: scale(1.2);
   }
-  
+.custom-navbar {
+  transition: background-color 0.3s ease;
+}
+
+body.light-theme .custom-navbar {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  color: #000;
+}
