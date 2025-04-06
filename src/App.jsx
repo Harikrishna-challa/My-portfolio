@@ -25,16 +25,39 @@ function App() {
   }, []);
 
   return (
-    <div className={darkMode ? "dark-mode" : ""}>
+    <div className={darkMode ? 'dark-mode' : ''}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+
       <Hero />
-      <Projects />
-      <About />
-      <Skills />
-      <Tools />
-      <Education />
-      <Certificates />
-      <Contact />
+      
+      <section data-aos="fade-up">
+        <Projects />
+      </section>
+
+      <section data-aos="fade-up">
+        <About />
+      </section>
+
+      <section data-aos="fade-up">
+        <Skills />
+      </section>
+
+      <section data-aos="fade-up">
+        <Tools />
+      </section>
+
+      <section data-aos="fade-up">
+        <Education />
+      </section>
+
+      <section data-aos="fade-up">
+        <Certificates />
+      </section>
+
+      <section data-aos="fade-up">
+        <Contact />
+      </section>
+
       <Footer />
       <ScrollToTop />
     </div>

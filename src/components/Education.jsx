@@ -1,41 +1,48 @@
 // src/components/Education.jsx
 import React from 'react';
-import '../styles/Education.css'; // Linked external CSS
+import '../styles/Education.css';
 
 const Education = () => {
+  const educationData = [
+    {
+      degree: 'Master of Computer Applications (MCA)',
+      institution: 'Prof. G. Ram Reddy Centre for Distance Education, Osmania University',
+      status: 'Pursuing (2nd Semester)',
+      subjects: 'OS, DBMS, DAA, AI, ML, Web Technologies',
+    },
+    {
+      degree: 'Bachelor of Science (B.Sc.) – MPCs',
+      institution: 'Sai Ram Degree College, Satavahana University',
+      status: 'Graduated in 2022',
+      subjects: 'Mathematics, Physics, Computer Science',
+    },
+    {
+      degree: 'Intermediate – MPC',
+      institution: 'Masters Junior College, Jammikunta',
+      status: 'Completed in 2019',
+      subjects: 'Mathematics, Physics, Chemistry',
+    },
+    {
+      degree: 'SSC (10th Class)',
+      institution: 'ZPHS High School Vavilala, Vavilala',
+      status: 'Completed in 2016',
+    },
+  ];
+
   return (
     <section id="education" className="education-section" data-aos="fade-up">
-        <div className='full-screen'>
-      <div className="container">
-        <h2 className="section-title">Education</h2>
-
-        <div className="education-card">
-          <h4>Master of Computer Applications (MCA)</h4>
-          <p><strong>Institution:</strong> Prof. G. Ram Reddy Centre for Distance Education, Osmania University</p>
-          <p><strong>Status:</strong> Pursuing (2nd Semester)</p>
-          <p><strong>Core Subjects:</strong> OS, DBMS, DAA, AI, ML, Web Technologies</p>
+      <div className="full-screen">
+        <div className="container">
+          <h2 className="section-title">Education</h2>
+          {educationData.map((edu, index) => (
+            <div className="education-card" key={index}>
+              <h4>{edu.degree}</h4>
+              <p><strong>Institution:</strong> {edu.institution}</p>
+              <p><strong>{edu.status.includes('Pursuing') ? 'Status' : 'Year'}:</strong> {edu.status}</p>
+              {edu.subjects && <p><strong>Subjects:</strong> {edu.subjects}</p>}
+            </div>
+          ))}
         </div>
-
-        <div className="education-card">
-          <h4>Bachelor of Science (B.Sc.) – MPCs</h4>
-          <p><strong>Institution:</strong> Sai Ram Degree College, Satavahana University</p>
-          <p><strong>Graduation:</strong> 2022</p>
-          <p><strong>Subjects:</strong> Mathematics, Physics, Computer Science</p>
-        </div>
-
-        <div className="education-card">
-          <h4>Intermediate – MPC</h4>
-          <p><strong>Board:</strong> Masters junior College, Jammikunta</p>
-          <p><strong>Year:</strong> 2019</p>
-          <p><strong>Subjects:</strong> Mathematics, Physics, Chemistry</p>
-        </div>
-
-        <div className="education-card">
-          <h4>SSC (10th Class)</h4>
-          <p><strong>Board:</strong> ZPHS High School Vavilala, Vavilala</p>
-          <p><strong>Year:</strong> 2016</p>
-        </div>
-      </div>
       </div>
     </section>
   );

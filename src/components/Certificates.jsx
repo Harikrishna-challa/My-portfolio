@@ -1,5 +1,6 @@
+// src/components/Certificates.jsx
 import React, { useEffect } from 'react';
-import '../styles/Certificates.css'; // External stylesheet
+import '../styles/Certificates.css';
 
 const Certificates = () => {
   useEffect(() => {
@@ -52,17 +53,12 @@ const Certificates = () => {
         <div className="container">
           <h2 className="section-title">Certificates & Experience</h2>
           <div className="certificate-list">
-            {certificates.map((cert) => (
+            {certificates.map(cert => (
               <div key={cert.id} className="certificate-card">
                 <h5>{cert.title}</h5>
                 <p><strong>Issuer:</strong> {cert.issuer}</p>
                 {cert.duration && <p><strong>Duration:</strong> {cert.duration}</p>}
                 <p>{cert.description}</p>
-                {cert.link && (
-                  <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                    Learn more about {cert.issuer}
-                  </a>
-                )}
               </div>
             ))}
           </div>
