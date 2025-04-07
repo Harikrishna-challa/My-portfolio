@@ -3,6 +3,7 @@
     background: linear-gradient(135deg, #1f1c2c, #928dab, #0f2027);
     padding: 5rem 0;
     color: #ffffff;
+    overflow: hidden;
     text-align: center;
   }
   

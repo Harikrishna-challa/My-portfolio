@@ -1,18 +1,8 @@
 // src/components/Certificates.jsx
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/Certificates.css';
 
 const Certificates = () => {
-  useEffect(() => {
-    const updateVh = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    };
-    updateVh();
-    window.addEventListener('resize', updateVh);
-    return () => window.removeEventListener('resize', updateVh);
-  }, []);
-
   const certificates = [
     {
       id: 1,
@@ -49,19 +39,17 @@ const Certificates = () => {
 
   return (
     <section id="certificates" className="certificates-section" data-aos="fade-up">
-      <div className="full-screen">
-        <div className="container">
-          <h2 className="section-title">Certificates & Experience</h2>
-          <div className="certificate-list">
-            {certificates.map(cert => (
-              <div key={cert.id} className="certificate-card">
-                <h5>{cert.title}</h5>
-                <p><strong>Issuer:</strong> {cert.issuer}</p>
-                {cert.duration && <p><strong>Duration:</strong> {cert.duration}</p>}
-                <p>{cert.description}</p>
-              </div>
-            ))}
-          </div>
+      <div className="container">
+        <h2 className="section-title">Certificates & Experience</h2>
+        <div className="certificate-list">
+          {certificates.map(cert => (
+            <div key={cert.id} className="certificate-card">
+              <h5>{cert.title}</h5>
+              <p><strong>Issuer:</strong> {cert.issuer}</p>
+              {cert.duration && <p><strong>Duration:</strong> {cert.duration}</p>}
+              <p>{cert.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

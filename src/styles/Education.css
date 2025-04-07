@@ -1,12 +1,11 @@
 .education-section {
-  padding: 80px 0;
+  padding: 100px 0;
   background: linear-gradient(to right, #2c3e50, #4ca1af);
   color: #f1f1f1;
   position: relative;
   z-index: 1;
-  scroll-margin-top: 100px; /* Prevents overlap on anchor scroll */
+  scroll-margin-top: 100px;
 }
-
 
 .section-title {
   font-size: 2.5rem;
@@ -15,6 +14,7 @@
   text-transform: uppercase;
   color: #00e6e6;
   text-shadow: 2px 2px 8px rgba(0, 255, 255, 0.4);
+  text-align: center;
 }
 
 .education-card {
@@ -36,10 +36,4 @@
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
 }
 
-.full-screen {
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* ❌ Removed .full-screen height to fix mobile issues */

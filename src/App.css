@@ -3,9 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 section {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
 }
-
 /* Default Light Mode Styles */
 body {
   margin: 0;
@@ -121,11 +120,4 @@ input:checked + .slider {
 }
 input:checked + .slider:before {
   transform: translateX(20px);
-}
-@media (max-width: 768px) {
-  section {
-    padding-top: 100px !important;
-    padding-bottom: 100px !important;
-    min-height: auto;
-  }
 }

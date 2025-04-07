@@ -31,7 +31,6 @@ const Education = () => {
 
   return (
     <section id="education" className="education-section" data-aos="fade-up">
-      <div className="full-screen">
         <div className="container">
           <h2 className="section-title">Education</h2>
           {educationData.map((edu, index) => (
@@ -43,7 +42,6 @@ const Education = () => {
             </div>
           ))}
         </div>
-      </div>
     </section>
   );
 };

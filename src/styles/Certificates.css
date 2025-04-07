@@ -1,12 +1,9 @@
 .certificates-section {
-  padding: 80px 0;
+  padding: 60px 0;
   background: linear-gradient(to right, #1c92d2, #f2fcfe);
   color: #333;
-  position: relative;
-  z-index: 1;
-  scroll-margin-top: 80px; /* Prevents overlap on anchor scroll */
+  scroll-margin-top: 80px;
 }
-
 
 .section-title {
   font-size: 2.5rem;
@@ -15,6 +12,7 @@
   text-transform: uppercase;
   color: #00e6e6;
   text-shadow: 2px 2px 8px rgba(0, 255, 255, 0.4);
+  text-align: center;
 }
 
 .certificate-list {
@@ -26,8 +24,8 @@
 }
 
 .certificate-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   padding: 1.5rem;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
@@ -38,12 +36,4 @@
 .certificate-card:hover {
   transform: scale(1.03);
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
-}
-
-.full-screen {
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
