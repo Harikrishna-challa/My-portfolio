@@ -63,7 +63,7 @@ const Hero = () => {
             <Button
               variant="outline-success"
               className="hero-btn"
-              href="/Challa_Harikrishna_Resume.pdf"
+              href="/public/Challa_Harikrishna-Resume.pdf"
               target="_blank"
             >
               Resume
