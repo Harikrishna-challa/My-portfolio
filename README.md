@@ -10,3 +10,21 @@ A personal portfolio website built using **React**, **Bootstrap**, and **AOS ani
 - AOS Scroll Animations
 
 ## 📂 Folder Structure
+
+## 📄 Resume
+Available at: `/Challa_Harikrishna-Resume.pdf`
+
+## 📦 Tech Stack
+- React.js (Vite)
+- Bootstrap 5
+- React-Bootstrap
+- AOS
+- GitHub Pages
+
+## 🌐 Deployment
+Deployed at: [https://harikrishna-challa.github.io/My-portfolio](https://harikrishna-challa.github.io/My-portfolio)
+
+## 🧠 Author
+**Challa Harikrishna**
+
+[GitHub](https://github.com/Harikrishna-challa)
