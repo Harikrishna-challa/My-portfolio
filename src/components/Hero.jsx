@@ -63,7 +63,7 @@ const Hero = () => {
             <Button
               variant="outline-success"
               className="hero-btn"
-              href={`${process.env.PUBLIC_URL}/Challa_Harikrishna_Resume.pdf`}
+              href={`/Challa_Harikrishna_Resume.pdf`}
               target="_blank"
             >
               Resume
