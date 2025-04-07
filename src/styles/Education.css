@@ -4,7 +4,7 @@
   color: #f1f1f1;
   position: relative;
   z-index: 1;
-  scroll-margin-top: 80px; /* Prevents overlap on anchor scroll */
+  scroll-margin-top: 100px; /* Prevents overlap on anchor scroll */
 }
 
 
