@@ -61,10 +61,11 @@ const Hero = () => {
               GitHub
             </Button>
             <Button
-              variant="outline-success"
-              className="hero-btn"
-              href={`${process.env.PUBLIC_URL}/Challa_Harikrishna-Resume.pdf`}
-              target="_blank"
+               variant="outline-success"
+               className="hero-btn"
+               href={`${import.meta.env.BASE_URL}Challa_Harikrishna-Resume.pdf`}
+               target="_blank"
+               rel="noopener noreferrer"
             >
               Resume
             </Button>
