@@ -31,10 +31,6 @@ function App() {
       <Hero />
       
       <section data-aos="fade-up">
-        <Projects />
-      </section>
-
-      <section data-aos="fade-up">
         <About />
       </section>
 
@@ -52,6 +48,9 @@ function App() {
 
       <section data-aos="fade-up">
         <Certificates />
+      </section>
+<section data-aos="fade-up">
+        <Projects />
       </section>
 
       <section data-aos="fade-up">
