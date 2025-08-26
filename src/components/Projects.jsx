@@ -2,6 +2,14 @@ import React from 'react';
 import '../styles/Projects.css';
 
 const projects = [
+
+  {
+     title:'Task Management System',
+     description: 'A web application for managing tasks in a team environment , It supports role-based access control.',
+     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'GitHub', 'Vercel', 'Render'],
+     github:'https://github.com/Harikrishna-challa/Task-manager',
+     demo:'https://task-manager-smoky-zeta.vercel.app/login',
+   },
   {
     title: 'MERN To-Do List App',
     description: 'A full-stack To-Do application with user authentication and task CRUD functionality.',

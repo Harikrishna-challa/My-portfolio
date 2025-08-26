@@ -63,7 +63,7 @@ const Hero = () => {
             <Button
                variant="outline-success"
                className="hero-btn"
-               href={`${import.meta.env.BASE_URL}Challa_Harikrishna-Resume.pdf`}
+               href={`${import.meta.env.BASE_URL}Challa_Harikrishna_Resume.pdf`}
                target="_blank"
                rel="noopener noreferrer"
             >
